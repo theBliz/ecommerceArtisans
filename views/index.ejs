@@ -1,0 +1,37 @@
+<% include header %>
+
+	<div id="parallax"></div>
+
+	<section id="newsletter" class="section" ng-app="ecommerceArtisans" ng-controller="ecommerceArtisansCtrl">
+		<div class="container">
+			<div class="row logo">
+                <img src="img/logo.png">
+            </div>
+			<div class="row" ng-hide="hideRegister">
+				<div class="col-md-12">
+					<div class="overview animate" data-animate="fadeInDown">
+						<h1>L'ecommerce può spaventare</h1>
+						<p class="lead">Iscriviti gratuitamente per consigli, confronti e idee.</p>
+					</div>
+					<form role="form" class="animate" data-animate="fadeInUp">
+						<div class="input-group">
+			            	<input type="text" class="form-control input-lg" placeholder="Email" ng-model="newMail">
+			            	<span class="input-group-btn">
+			              		<button class="btn btn-lg btn-default" type="button" ng-click="register()">Iscriviti</button>
+			            	</span>
+			          	</div>
+		          	</form>
+				</div>
+			</div>
+			<div class="row" ng-show="hideRegister">
+				<div class="col-md-12">
+					<div class="overview animate" data-animate="fadeInDown">
+						<h1>Benvenuto!</h1>
+						<p class="lead">Registrati al <a class="link" href="https://www.facebook.com/groups/1737926006444514" target="_blank">gruppo Facebook</a> per domande, dubbi e anteprime.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<% include footer %>
