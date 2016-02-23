@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>eCommerce Artisans</title>
+        <title>eCommerce Artisans - Digital Opportunity</title>
          <!-- Meta, title, CSS, favicons, etc. -->
 	    <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">	
+		<meta name="description" content="eCommerce Artisans ...">
+		<meta name="author" content="eCommerce Artisans">	
 		<% if (ENV_DEVELOPMENT) { %>
 		    <script src="http://localhost:35729/livereload.js"></script>
 		<% } %>
@@ -14,7 +14,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		
 		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 		
 		<!-- Rocket extras -->
 		<link href="css/animate.css" rel="stylesheet">
@@ -29,16 +29,18 @@
 		<![endif]-->
 		<style type="text/css">
 			#parallax {
-			  height: 500px;
+			  height: 640px;
 			  width: 100%;
 			  position: fixed;
-			  background: url('https://photoshd.files.wordpress.com/2010/08/sunset-6-8-2010.jpg?w=2225&h=1300') center center no-repeat;
+			  background: url('/img/bg.jpg') center center no-repeat;
 			  background-size: cover;
 			  z-index: -100;
 			}
+			.overlay {background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;z-index:-99999999;}
+			h1, .lead {color:#fff;}
 			#newsletter {
-				margin-top: 10%;
 				color: #fff;
+				padding-bottom: 5em;
 			}
 			#newsletter .lead{
 				font-weight: 500;
@@ -61,24 +63,31 @@
 			}
 			.logo img{
 				width:30%; 
-				margin-top:-20%
+				margi n-top: 2%;
+				padding-bottom: 20px;
 			}
 			footer{
-				margin-top: 100px;
-				background-color: #F3B402;
+				background-color: #FFCC3B;
 				color:#FFF;
 			}
+			footer .section{
+				padding-top:50px;
+			}
 			footer .logo_footer{
-				width:80px;
-				margin-left:25%;
+				width:120px;
+				
 				margin-bottom: 5%;
 			}
 			footer .logo_footer_2{
-				width:100px;
-				margin-left:25%;
+				width:120px;
+				
+			}
+			footer .copyright{
+				margin-top: 2em;
+				
 			}
 			body{
-				background-color: #F3B402;
+				background-color: #FFCC3B;
 			}
 			.link{
 				color: #F3B402;
@@ -89,6 +98,7 @@
 			.link:focus{
 				color: #FFCC3B;
 			}
+			.active-section {padding:0;}
 			
 		</style>
     </head>
