@@ -1,6 +1,6 @@
 var express = require('express');
 var MailchimpApi = require('mailchimp-api');
-var mc = new MailchimpApi.Mailchimp('afc944703ad56407ba567f5aaf0a1845-us5');
+var mc = new MailchimpApi.Mailchimp('95b024d51cd1e3854fa26743684c5c40-us12');
 var fs = require('fs');
 var router = express.Router();
 
@@ -21,7 +21,7 @@ router.post('/newsletter/subscribe', function(req, res) {
     console.log('data',req.body)
     function subscribeToNewsLetter() {
         mc.lists.subscribe({
-                id: 'fc9a5b95ad',
+                id: '1a3284892f',
                 email: {
                     email: req.body.email
                 }
