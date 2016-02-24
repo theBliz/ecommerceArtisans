@@ -23,7 +23,7 @@ router.post('/newsletter/subscribe', function(req, res) {
         mc.lists.subscribe({
                 id: '1a3284892f',
                 email: {
-                    email: req.body.email
+                    email: req.body.newMail
                 }
             }, function() {
                 //function(data)

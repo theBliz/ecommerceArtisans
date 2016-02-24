@@ -14,8 +14,12 @@ app.controller('ecommerceArtisansCtrl', function($scope,$http) {
 			data    : {'newMail':$scope.newMail} 
         })
         .success(function(data){
-			console.log(data)
-			$scope.hideRegister=true
+				console.log(data)
+        	if(data.status){
+				$scope.hideRegister=true
+			}else{
+				alert('Errore, reinserire mail')
+			}
         })
 
 	}
